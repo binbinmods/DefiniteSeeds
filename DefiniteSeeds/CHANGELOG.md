@@ -1,3 +1,9 @@
+# 1.1.2
+
+Fixed incorrect icon
+
+Removed extraneous functions (moved to SeedSearcher mod)
+
 # 1.1.1
 
 Update for AtO v1.7.2
