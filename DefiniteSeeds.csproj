@@ -38,9 +38,24 @@
     <Reference Include="com.stiffmeds.obeliskialessentials">
       <HintPath>../../!libs/com.stiffmeds.obeliskialessentials.dll</HintPath>
     </Reference>
-    <Reference Include="com.stiffmeds.obeliskialcontent">
-      <HintPath>../../!libs/com.stiffmeds.obeliskialcontent.dll</HintPath>
+    <Reference Include="PhotonUnityNetworking">
+      <HintPath>../../!libs/PhotonUnityNetworking.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>../../!libs/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+
+    <Reference Include="Unity.InputSystem">
+      <HintPath>../../!libs/Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>../../!libs/UnityEngine.UI.dll</HintPath>
+    </Reference>
+        <Reference Include="PhotonRealtime">
+      <HintPath>../../!libs/PhotonRealtime.dll</HintPath>
+    </Reference>
+
+
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

@@ -27,6 +27,9 @@ namespace DefiniteSeeds
 
 
         public static ConfigEntry<bool> EnableMod { get; set; }
+        public static ConfigEntry<bool> EnableSeedResets { get; set; }
+        public static ConfigEntry<bool> ChooseSeed { get; set; }
+        public static ConfigEntry<int> IconHorizontalShift { get; set; }
 
         internal static int ModDate = int.Parse(DateTime.Today.ToString("yyyyMMdd"));
         private readonly Harmony harmony = new(PluginInfo.PLUGIN_GUID);
@@ -43,6 +46,9 @@ namespace DefiniteSeeds
             string modName = "DefiniteSeeds";
             // Sets the title, default values, and descriptions
             EnableMod = Config.Bind(new ConfigDefinition(modName, "EnableMod"), true, new ConfigDescription("If false, disables the mod. No Restart Required."));
+            EnableSeedResets = Config.Bind(new ConfigDefinition(modName, "EnableSeedResets"), true, new ConfigDescription("If false, disables the seed reset button. No Restart Required."));
+            ChooseSeed = Config.Bind(new ConfigDefinition(modName, "ChooseSeed"), false, new ConfigDescription("If true, allows you to choose what seed you want to use. Entering nothing will set the seed to a random one. No Restart Required."));
+            IconHorizontalShift = Config.Bind(new ConfigDefinition(modName, "IconHorizontalShift"), 0, new ConfigDescription("The horizontal shift of the icon. More positive is more to the right, more negative is more to the left. A value of 100 will shift the UI one \"Icon\" to the right. "));
 
             PluginName = PluginInfo.PLUGIN_NAME;
             PluginVersion = PluginInfo.PLUGIN_VERSION;

@@ -1,3 +1,7 @@
+# 1.2.0
+
+Added the reroll seed button
+
 # 1.1.2
 
 Fixed incorrect icon
